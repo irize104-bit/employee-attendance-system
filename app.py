@@ -198,9 +198,10 @@ def download_monthly_excel():
         download_name="monthly_attendance.xlsx",
         as_attachment=True
     )
-    with app.app_context():
-         db.create_all()
+    # CREATE DATABASE TABLES WHEN APP STARTS
+with app.app_context():
+    db.create_all()
 
 if __name__ == "__main__":
     app.run(debug=True)
-   
+    
