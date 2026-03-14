@@ -198,7 +198,6 @@ def download_monthly_excel():
         download_name="monthly_attendance.xlsx",
         as_attachment=True
     )
-
 if __name__ == "__main__":
 
     with app.app_context():
@@ -206,3 +205,4 @@ if __name__ == "__main__":
 
 if __name__ == "__main__":
     app.run(debug=True)
+
